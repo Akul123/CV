@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <title>Resume</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <body>
-    <div id="inner-nav"></div>
-    <div id="container">
-        <div id="profile">
-            <div id="image">
-                <img id="profile-photo" src="images/profile.jpeg" alt="Profile-Image">
-                <a href="#"><i class="fas fa-pen stroke-transparent"></i></a>
+    <div class="container">
+        <div class="profile">
+            <div class="image">
+                <img class="profile_image" src="images/profile.jpeg" alt="Profile-Image">
             </div>
-            <p id="role">Software Developer<br><span id="company">Ericsson Nikola Tesla, Croatia</span></p>
-            <hr width="100%">
-            <div id="about">
-                <p style="display:inline;">Education</p>
-                <p id="education"><br><strong>FESB</strong>, 09/2012 – 07/2015 Split, Croatia
-                                  <br><strong>RITEH</strong>, 09/2008 - 07/2011 Rijeka, Croatia</p>
+            <div class="shortcard">
+                <h1>Software Developer</h1>
+                <br><p>Ericsson Nikola Tesla, Croatia</p>
+                <br><i class="material-icons">&#xe55f;</i><p>Zagreb, Croatia</p>
+                <hr width="100%">
             </div>
-
-            <div id="contact">
+            <div class="shortcard">
+                <h1>Education</h1>
+                <p><br><strong>FESB</strong>, 09/2012 – 07/2015 <i class="material-icons">&#xe55f;</i>Split, Croatia
+                   <br><strong>RITEH</strong>, 09/2008 - 07/2011 <i class="material-icons">&#xe55f;</i>Rijeka, Croatia</p>
+            </div>
+            <div class="shortcard">
                 <hr>
-                <p style="display:inline;">Contact</p>
-                <p id="telephone">phone:<strong>[on demand]</strong></p>
-                <p id="email">email:<strong>luka.bajlo00@gmail.com</strong></p>
+                <h1>Contact</h1>
+                <br><i class="material-icons">&#xe0cd;</i><p><strong> [on demand]</strong></p>
+                <br><i class="material-icons">&#xe0be;</i><p><strong> luka.bajlo00@gmail.com</strong></p>
             </div>
-            <div id="languages">
+            <div class="shortcard">
                 <hr>
-                <p id="languages" style="display:inline;">Languages</p>
-                <p id="language">Croatian</p>
-                <p id="language">English</p>
+                <h1>Skills</h1>
+                <br><p>C &#x2022; C++ &#x2022; Python &#x2022; Docker &#x2022; Linux &#x2022;</p>
+                <br><p>GIT &#x2022; Gerrit &#x2022; javascript(basics) &#x2022;</p>
+                <br><p>Erlang(basics) &#x2022; TCP/IP</p>
+            </div>
+            <div class="shortcard">
+                <hr>
+                <h1>Languages</h1>
+                <br><p>Croatian [motherlanguage]</p>
+                <br><p>English</p>
             </div>
         </div>
-        <div id="info-cards">
+        <div class="sections">
             <div class="card">
-                <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Work Experience</p>
+                <p>Work Experience</p>
                 <ul>
                     <li>
-                        <p class="tags">Ericsson Nikola Tesla<span> | <span>09/2021 - current Zagreb, Croatia</span></span></p>
+                        <p class="tags">Ericsson Nikola Tesla<span> | <span>09/2021 - current <i class="material-icons">&#xe55f;</i> Zagreb, Croatia</span></span></p>
                         <ul>
                             <li><p class="tags"><span>Implementation of new features in 4G and 5G mobile networks according to the 3GPP standard
                                 first in the Cell and Sector and later in the Packet Processing Engine.</span></p></li>
@@ -45,7 +54,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p class="tags">Stanić automation ltd<span> | <span>10/2017 - 09/2021 Zagreb, Croatia and Memmingen, Germany</span></span></p>
+                        <p class="tags">Stanić automation ltd<span> | <span>10/2017 - 09/2021 <i class="material-icons">&#xe55f;</i> Zagreb, Croatia and Memmingen, Germany</span></span></p>
                         <ul>
                             <li><p class="tags"><span>Worked in the electrical and electronic manufacturing industry mostly on programming Programmable Logical Controllers.</span></p></li>
                             <li><p class="tags"><span>Programming controllers (Codesys 2, Codesys 3), KUKA robots (KRL) and Human Machine Interfaces (MicroInovation, Galileo, VisiWin) to 
@@ -59,7 +68,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p class="tags">Ured V Ltd.<span> | <span>12/2016 - 09/2017 Zagreb, Croatia</span></span></p>
+                        <p class="tags">Ured V Ltd.<span> | <span>12/2016 - 09/2017 <i class="material-icons">&#xe55f;</i> Zagreb, Croatia</span></span></p>
                         <ul>
                             <li><p class="tags"><span>Participated in development of the WEBSCADA system (using C++ and javascript) on the thermal power plant in Zagreb.</span></p></li>
                             <li><p class="tags"><span>Participated on maintenance of the Wonderware SCADA system.</span></p></li>
@@ -75,23 +84,22 @@
                 </ul>
             </div>
             <div class="card">
-                <p><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Education & Qualifications</p>
+                <p>Education & Qualifications</p>
                 <ul>
                     <li><p class="tags">Master of electrical engineering, Faculty of Electrical Engineering, Mechanical Engineering
-                        and Naval Architecture<br><span>09/2013 – 07/2015 Split, Croatia </span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    <li><p class="tags">Additional ECTS credits program (necessary condition) to enroll in graduate study<br><span>09/2012 – 07/2013 Split, Croatia</span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    <li><p class="tags">Bachelor of electrical engineering RITEH Faculty of Engineering<br><span>09/2008 - 07/2011,  Rijeka, Croatia</span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                        and Naval Architecture<br><span>09/2013 – 07/2015 <i class="material-icons">&#xe55f;</i> Split, Croatia </span></p>
+                    <li><p class="tags">Additional ECTS credits program (necessary condition) to enroll in graduate study<br><span>09/2012 – 07/2013 <i class="material-icons">&#xe55f;</i>Split, Croatia</span></p>
+                    <li><p class="tags">Bachelor of electrical engineering RITEH Faculty of Engineering<br><span>09/2008 - 07/2011, <i class="material-icons">&#xe55f;</i> Rijeka, Croatia</span></p>
                 </ul>
             </div>
             <div class="card">
-                <p><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Courses</p>
+                <p>Courses</p>
                 <ul>
                     <li><p class="tags">PL201 Programming with Modern C++ – Advanced (Associated with Ericsson Nikola Tesla <br><span>05/09/2022 – 16/09/2022</span></p></li>
                     <li><a class="link" href="https://www.coursera.org/account/accomplishments/certificate/NUWYARMJS5GM"><p class="tags">Version control with GIT</p></a></li>
-                    <li><a class="link" href="https://www.coursera.org/account/accomplishments/certificate/NUWYARMJS5GM"><p class="tags">Version control with GIT</p></a></li>
+                    <li><a class="link" href="https://www.coursera.org/account/accomplishments/specialization/certificate/T6YRXHMLW8K9"><p>Deep Learning Specialization</p></a></li>
+                    <li><a class="link" href="https://www.coursera.org/account/accomplishments/specialization/certificate/WT5VDDH98Q9P"><p>DeepLearning.AI Tensorflow Developer Specialization</p></a></li>
+                    <li><a class="link" href="https://www.coursera.org/account/accomplishments/specialization/certificate/E6V9RBRYQNU5"><p>TensorFlow: Advanced Techniques Specialization</p></a></li>
                 </ul>
             </div>
         </div>

@@ -8,13 +8,13 @@ a{
     color: black;
 }
 hr{
-    background: grey;
+    background: rgb(11, 5, 5);
 }
-#container{
+.container{
     position: relative;
     display: flex;
 }
-#profile{
+.profile{
     flex: 15%;
     display: block;
     position: relative;
@@ -22,7 +22,14 @@ hr{
     width: 100%;
     height: 100%;
 }
-#info-cards{
+.profile_image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%; /* 10px; */
+}
+
+.sections{
     flex: 55%;
     display: block;
     margin-top: 5%;
@@ -30,115 +37,49 @@ hr{
     width: 100%;
     height: 100%;
 }
-#image{
+.image{
     position: relative;
     overflow: hidden;
-}
-#image,#profile-photo{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-}
-#image > a{
-    position: absolute;
-    top:0;
-    left:0;
-    background: rgba(0,0,0,0.5) !important;
-    height: 100%;
-    width: 100%;
-    display: none;
-}
-#image > a > i{
-    -webkit-text-stroke: 1px #ffffffdd;
-    padding: 40%;
-}
-#image:hover a{
-    display: block;
-}
-#name{
-    font-size: 23px !important;
-    line-height: 20px !important;
-}
-#about,.card > ul > li{
-    padding: 0 0 0 15px;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-#role, #languages, #contact, #about{
-    font-size: 20px !important;
-    padding: 0 !important;
-}
-
-#role, #languages, #contact, #name, #about > p{
-    font-weight: bolder;
-    font-family: 'Open Sans', sans-serif;
-}
-#language{
-    font-size: 13.5px;
-}
-#email{
-    font-size: 15px !important;
-    font-weight: bold !important;
-    font-family: 'Cutive Mono',monospace;
-}
-#college,#email,#year-graduation,#education,#more-about,#telephone,#fax{
-    color: #555;
-    font-size: 13.5px;
-}
+ }
 strong,span{
     color: black;
     font-size: 16px;
 }
-#social-links,#about{
-    display: inline-block;
+.shortcard{
+    overflow-x: hidden;
+    margin-bottom: 10px;
+    background-color: transparent;
+    display:inline;
+    font-weight: bolder;
 }
-#social-links{
-    margin-bottom: 12px;
+.shortcard p{
+    display:inline;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 13.5px;
 }
-#social-links a{
-    margin: 0 10px;
+.shortcard i{
+    display:inline;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 13.5px;
 }
-#edit-intro{
-    display: block;
-    color:#097bbf;
-    font-family: 'Nunito', sans-serif;
+.shortcard h1{
+    display:inline;
+    margin-bottom: 10px;
+    color: #3b3b3b;
+    font-size: 20px;
 }
-.fab{
-    font-size: 1.1em;
-}
-.fab,.fas{
-    color: whitesmoke;
-}
-#about > a{
-    top: 4px;
-    right: 8px;
-}
-.edit{
-    top: 19px;
-    right: 10px;
-}
-#about > a, .edit{
-    position: absolute;
-    font-size: 15px !important;
-}
-.stroke-transparent {
- -webkit-text-stroke: 1px #000;
- -webkit-text-fill-color: transparent;
-}
-.blue{
-    color: #097bbf !important;
-    font-size: 13px;
-}
-.stroke-transparent-blue {
- -webkit-text-stroke: 1px #097bbf;
- -webkit-text-fill-color: transparent;
+.shortcard strong{
+    display:inline;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 13.5px;
 }
 .card{
     box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
     overflow-x: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 15px 30px 30px 30px;
     background-color: #fff;
 }
@@ -167,12 +108,14 @@ strong,span{
 .card > ul{
     list-style-type: none;
 }
-.tags{
+.link{
+    color: blue;
     font-size: 17px;
     font-weight: bolder;
 }
-.link{
-    color: blue;
+.tags{
+    font-size: 17px;
+    font-weight: bolder;
 }
 .tags ~ a{
     display: none !important;
@@ -184,21 +127,4 @@ strong,span{
 }
 .tags span span{
     color: #738f93;
-}
-@media screen and (max-width:1090px){
-    #profile{
-        margin-left: 5%;
-    }
-}
-@media screen and (max-width:850px){
-    #container{
-        display: block;
-    }
-    #profile{
-        width: 90%;
-    }
-    .card{
-        margin: 0 5%;
-        margin-bottom: 30px;
-    }
 }
